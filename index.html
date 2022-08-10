@@ -17,29 +17,14 @@
     </main>
     <div class="contain">
         <div class="row">
-            <div class="col red" onclick="fun(1)"></div>
-            <div class="col yellow" onclick="fun(2)"></div>
+            <div class="col red" id="red" onclick="fun(0)"></div>
+            <div class="col yellow" id="yellow" onclick="fun(1)"></div>
         </div>
         <div class="row">
-            <div class="col green" onclick="fun(3)"></div>
-            <div class="col blue" onclick="fun(4)"></div>
+            <div class="col green" id="green" onclick="fun(2)"></div>
+            <div class="col blue" id="blue" onclick="fun(3)"></div>
         </div>
     </div>
-    <audio id="g_audio">
-        <source src="green.mp3">
-    </audio>  
-    <audio id="r_audio">
-        <source src="red.mp3">
-    </audio>   
-    <audio id="b_audio">
-        <source src="blue.mp3">
-    </audio>   
-    <audio id="y_audio">
-        <source src="yellow.mp3">
-    </audio>     
-    <audio id="w_audio">
-        <source src="wrong.mp3">
-    </audio>    
     <button id="start" onclick="start()">Start</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
