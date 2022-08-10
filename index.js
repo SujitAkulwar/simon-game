@@ -2,29 +2,34 @@ var string = "";
 var string2 = "";
 var ans;
 var counter=0;
-var counter2 = 0;
+var temp = 0;
 var n,n2;
 
 function start(){
     ans = Math.floor(Math.random()*4);
-    string += ans;
+    string += ans;      console.log(ans);
     Play(ans);
 }
 
 function fun(i){
+    string2 += i;
     n = string.length;
-    n2 = string2.length; 
+    n2 = string2.length;     console.log(n+" "+n2);
     if(n == n2){
         check();
+        string2 = "";
     }else{
-        string2 += i;
-        game();
+               console.log(string);console.log(string2);
     }
 }
 
 function check(){
-    if(string != string2){
-        wrong_ans();
+    if(string == string2){
+        counter++;          console.log(counter);
+        start();
+    }
+    else{
+        wrong_ans();            console.log("wrong");   
     }
     $("h1").text("score = "+counter);
 }
